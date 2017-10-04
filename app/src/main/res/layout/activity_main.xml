@@ -19,4 +19,22 @@
         android:onClick="pauseMusic"
         android:text="Pause" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="volumePlus"
+        android:text="Vol +" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="volumeMinus"
+        android:text="Vol -" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="forward30sec"
+        android:text=">> 30 sec" />
+
 </LinearLayout>

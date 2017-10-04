@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        mMediaPlayer = MediaPlayer.create(this,R.raw.musica_1);
+        mMediaPlayer = MediaPlayer.create(this, R.raw.musica_1);
     }
 
     public void playMusic(View view) {
@@ -22,5 +22,17 @@ public class MainActivity extends AppCompatActivity {
 
     public void pauseMusic(View view) {
         mMediaPlayer.pause();
+    }
+
+    public void volumePlus(View view) {
+
+    }
+
+    public void volumeMinus(View view) {
+
+    }
+
+    public void forward30Sec(View view) {
+
     }
 }
