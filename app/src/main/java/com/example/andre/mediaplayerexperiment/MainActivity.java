@@ -1,38 +1,34 @@
 package com.example.andre.mediaplayerexperiment;
 
-import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.Button;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-
-    private MediaPlayer mMediaPlayer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        mMediaPlayer = MediaPlayer.create(this, R.raw.musica_1);
+
+        Button playButton = (Button) findViewById(R.id.play_button);
+        Button pauseButton = (Button) findViewById(R.id.pause_button);
+
+        playButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(MainActivity.this, "Play", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        pauseButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(MainActivity.this, "Pause", Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
-    public void playMusic(View view) {
-        mMediaPlayer.start();
-    }
-
-    public void pauseMusic(View view) {
-        mMediaPlayer.pause();
-    }
-
-    public void volumePlus(View view) {
-
-    }
-
-    public void volumeMinus(View view) {
-
-    }
-
-    public void forward30Sec(View view) {
-
-    }
 }

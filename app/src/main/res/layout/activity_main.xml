@@ -8,12 +8,14 @@
     tools:context="com.example.andre.mediaplayerexperiment.MainActivity">
 
     <Button
+        android:id="@+id/play_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="playMusic"
         android:text="Play" />
 
     <Button
+        android:id="@+id/pause_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="pauseMusic"
